@@ -7,6 +7,7 @@
                 width: 0.7em;
                 height: 0.7em;
                 background-color: #000;
+                //квадраты
                 clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
                 position: absolute;
                 right: 0;
@@ -52,7 +53,9 @@
     }
     &:hover {
         .acc_image {
-            display: block;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
         }
         .acc__title {
             color: #000;
@@ -92,7 +95,9 @@
     position: absolute;//скрываю радиокнопку
     appearance: none; //скрываю радиокнопку
         &:checked ~ .acc_image {
-            display: block;
+            height: auto;
+            opacity: 1;
+            visibility: visible;
         }
         &:checked ~ .acc__title {
             color: #000;
@@ -100,14 +105,18 @@
 }
 
 .acc__image_mem1 {
-    max-width: 300px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
 
 .acc_image {
-    display: none;
-    padding: 10px 15px;
+    // display: none;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    padding: 0 15px;
 }
 
 .acc__image_mem1 {

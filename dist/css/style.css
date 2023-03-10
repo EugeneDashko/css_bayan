@@ -420,7 +420,9 @@ body {
   background-color: rgb(235, 227, 227);
 }
 .acc__item:hover .acc_image {
-  display: block;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
 }
 .acc__item:hover .acc__title {
   color: #000;
@@ -453,20 +455,25 @@ body {
   appearance: none;
 }
 .acc__mem:checked ~ .acc_image {
-  display: block;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
 }
 .acc__mem:checked ~ .acc__title {
   color: #000;
 }
 
 .acc__image_mem1 {
-  max-width: 300px;
+  max-width: 200px;
   margin: 0 auto;
 }
 
 .acc_image {
-  display: none;
-  padding: 10px 15px;
+  height: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+  padding: 0 15px;
 }
 
 .acc__image_mem1 {
@@ -477,9 +484,15 @@ body {
   body {
     min-width: 820px;
   }
+  .acc {
+    padding: 0 20px;
+  }
 }
 @media (min-width: 1920px) {
   body {
     min-width: 1920px;
+  }
+  .acc {
+    padding: 0 20px;
   }
 }
