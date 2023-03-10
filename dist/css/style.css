@@ -364,6 +364,7 @@ body {
   margin: 0 auto;
   background-color: rgb(201, 201, 201);
   font-family: "Roboto", sans-serif;
+  font-weight: 800;
 }
 
 .container {
@@ -403,6 +404,7 @@ body {
 }
 .acc:hover .acc__title {
   color: #000;
+  transition: 0.3ss;
 }
 
 .acc__header_title {

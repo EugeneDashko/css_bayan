@@ -33,6 +33,7 @@
         }
         &:hover .acc__title {
             color: #000;
+            transition: .3ss;
 
         }
 }
@@ -72,6 +73,7 @@
     height: 0; //скрываю радиокнопку
     position: absolute;//скрываю радиокнопку
     appearance: none; //скрываю радиокнопку
+
         &:checked ~ .acc_image {
             display: block;
         }
@@ -82,6 +84,7 @@
 
 .acc__image_mem1 {
     max-width: 300px;
+
 }
 
 
