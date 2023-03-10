@@ -1,0 +1,28 @@
+@import "normalize";
+@import "reset";
+@import "fonts";
+
+//default style's
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 320px;
+    margin: 0 auto;
+    background-color: rgb(201, 201, 201);
+    font-family: 'Roboto', sans-serif; // используем подключенный шрифт
+
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+
+@import "blocks/header";
+
+
+@import "mediaQueries";
+
