@@ -441,6 +441,10 @@ body {
   color: #000;
 }
 
+.acc__image_mem1 {
+  max-width: 300px;
+}
+
 .acc_image {
   display: none;
   padding: 10px 15px;
