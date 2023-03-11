@@ -1,5 +1,5 @@
 .acc {
-    margin: 20px auto;
+    margin: 0 auto;
         &:hover .acc__title {
             &:after {
                 content:'';
@@ -13,6 +13,7 @@
                 right: 0;
                 top: 50%;
                 transform: translateY(-50%);
+                margin-right: 3%;
             }
         }
         &:hover .acc__mem {
@@ -29,6 +30,7 @@
                     right: 0;
                     top: 50%;
                     transform: translateY(-50%);
+                    margin-right: 3%;
                 }
             }
         }
@@ -39,16 +41,15 @@
 }
 
 .acc__header_title {
-    padding: 10px 15px;
+    padding: 1% 1%;
 }
 
 .acc__item {
-    margin-bottom: 15px;
     &:before {
         content: '';
         height: 1px;
         width: 100%;
-        display: inline-block;
+        display: block;
         background-color: rgb(235, 227, 227);
     }
     &:hover {
@@ -77,15 +78,14 @@
 
 
 .acc__title {
+    background: transparent;
     display: block;
-    padding: 10px 15px;
+    padding: 20px 10px;
+    margin: 0 10px 0 0;
     cursor: pointer;
     transition: color .3s;
     position: relative;
     color: rgb(41, 108, 252);
-        &:hover {
-            // color: rgb(237, 245, 130);
-        }
 }
 
 
@@ -105,20 +105,16 @@
 }
 
 .acc__image_mem1 {
-    max-width: 200px;
+    max-width: calc(100%/1.1);
     margin: 0 auto;
+    padding: 0 20px 10px 0;
 }
 
 
 .acc_image {
-    // display: none;
+    width: 100%;
     height: 0px;
     opacity: 0;
     visibility: hidden;
     transition: all 1s ease-in-out;
-    padding: 0 15px;
-}
-
-.acc__image_mem1 {
-    cursor: pointer;
 }

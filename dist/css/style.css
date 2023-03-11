@@ -364,6 +364,7 @@ body {
   margin: 0 auto;
   background-color: rgb(201, 201, 201);
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 .container {
@@ -372,7 +373,7 @@ body {
 }
 
 .acc {
-  margin: 20px auto;
+  margin: 0 auto;
 }
 .acc:hover .acc__title:after {
   content: "";
@@ -385,6 +386,7 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  margin-right: 3%;
 }
 .acc:hover .acc__mem:checked ~ .acc__title {
   color: #000;
@@ -400,23 +402,21 @@ body {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  margin-right: 3%;
 }
 .acc:hover .acc__title {
   color: #000;
 }
 
 .acc__header_title {
-  padding: 10px 15px;
+  padding: 1% 1%;
 }
 
-.acc__item {
-  margin-bottom: 15px;
-}
 .acc__item:before {
   content: "";
   height: 1px;
   width: 100%;
-  display: inline-block;
+  display: block;
   background-color: rgb(235, 227, 227);
 }
 .acc__item:hover .acc_image {
@@ -441,13 +441,16 @@ body {
 }
 
 .acc__title {
+  background: transparent;
   display: block;
-  padding: 10px 15px;
+  padding: 20px 10px;
+  margin: 0 10px 0 0;
   cursor: pointer;
   transition: color 0.3s;
   position: relative;
   color: rgb(41, 108, 252);
 }
+
 .acc__mem {
   width: 0;
   height: 0;
@@ -464,35 +467,54 @@ body {
 }
 
 .acc__image_mem1 {
-  max-width: 200px;
+  max-width: 90.9090909091%;
   margin: 0 auto;
+  padding: 0 20px 10px 0;
 }
 
 .acc_image {
+  width: 100%;
   height: 0px;
   opacity: 0;
   visibility: hidden;
   transition: all 1s ease-in-out;
-  padding: 0 15px;
-}
-
-.acc__image_mem1 {
-  cursor: pointer;
 }
 
 @media (min-width: 820px) {
   body {
     min-width: 820px;
+    font-size: 1.2rem;
   }
   .acc {
     padding: 0 20px;
+  }
+  .acc__image_mem1 {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0 20px 10px 0;
+  }
+  .acc__image_mem1 {
+    cursor: pointer;
+  }
+  .acc_image {
+    cursor: pointer;
   }
 }
 @media (min-width: 1920px) {
   body {
     min-width: 1920px;
+    font-size: 1.4rem;
   }
   .acc {
     padding: 0 20px;
+  }
+  .acc__image_mem1 {
+    cursor: pointer;
+  }
+  .acc__image_mem1 {
+    max-width: 20%;
+  }
+  .acc_image {
+    cursor: pointer;
   }
 }

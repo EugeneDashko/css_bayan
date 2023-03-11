@@ -1,17 +1,41 @@
 @media (min-width:820px) {
     body {
         min-width: 820px;
+        font-size: 1.2rem;
     }
     .acc {
         padding: 0  20px;
+    }
+
+    .acc__image_mem1 {
+        max-width: calc(100%/2);
+        margin: 0 auto;
+        padding: 0 20px 10px 0;
+    }
+
+    .acc__image_mem1 {
+        cursor: pointer;
+    }
+    .acc_image {
+        cursor: pointer;
     }
 }
 
 @media (min-width:1920px) {
     body {
         min-width: 1920px;
+        font-size: 1.4rem;
     }
     .acc {
         padding: 0  20px;
+    }
+    .acc__image_mem1 {
+        cursor: pointer;
+    }
+        .acc__image_mem1 {
+        max-width: calc(100%/5);
+    }
+    .acc_image {
+        cursor: pointer;
     }
 }
