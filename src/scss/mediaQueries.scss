@@ -1,41 +1,71 @@
 @media (min-width:820px) {
     body {
-        min-width: 820px;
+        min-width: 100%;
         font-size: 1.2rem;
     }
     .acc {
-        padding: 0  20px;
+        padding: 0  2.43%;
     }
-
+    .acc__title {
+        padding: 1.5% 0.5%;
+    }
     .acc__image_mem1 {
-        max-width: calc(100%/2);
+        max-width: 26%;
         margin: 0 auto;
-        padding: 0 20px 10px 0;
-    }
-
-    .acc__image_mem1 {
-        cursor: pointer;
-    }
-    .acc_image {
-        cursor: pointer;
+        padding: 0 2.43% 1.22% 0;
     }
 }
 
 @media (min-width:1920px) {
     body {
-        min-width: 1920px;
-        font-size: 1.4rem;
+        min-width: 100%;
+        font-size: 1.6rem;
     }
     .acc {
-        padding: 0  20px;
+        padding: 0  1.04%;
+            &:hover .acc__title {
+                &:after {
+                    content:'';
+                    display: block;
+                    width: 0.7em;
+                    height: 0.7em;
+                    background-color: #000;
+                    //кресты
+                    clip-path: polygon(35% 0%,65% 0%,65% 35%,100% 35%,100% 60%,65% 60%,65% 100%,35% 100%,35% 60%,0% 60%,0% 35%,35% 35%);
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-right: 3%;
+                    transition: clip-path 0.5s;
+                }
+            }
+            &:hover .acc__mem {
+                &:checked ~ .acc__title {
+                    color: #000;
+                    &:after {
+                        content:'';
+                        display: block;
+                        width: 0.7em;
+                        height: 0.7em;
+                        background-color: #000;
+                        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        margin-right: 3%;
+                        transition: clip-path 0.5s;
+                    }
+                }
+            }
+            &:hover .acc__title {
+                color: #000;
+    
+            }
     }
-    .acc__image_mem1 {
-        cursor: pointer;
-    }
+
         .acc__image_mem1 {
         max-width: calc(100%/5);
-    }
-    .acc_image {
-        cursor: pointer;
     }
 }
